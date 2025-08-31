@@ -1,0 +1,20 @@
+[project]
+name = "vanipost"
+version = "0.1.0"
+description = "Python-based social media automation tool"
+authors = [
+    {name = "rajput"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "openai (>=1.102.0,<2.0.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "flask (>=3.1.2,<4.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
