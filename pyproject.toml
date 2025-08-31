@@ -1,20 +1,36 @@
-[project]
+[tool.poetry]
 name = "vanipost"
 version = "0.1.0"
-description = "Python-based social media automation tool"
-authors = [
-    {name = "rajput"}
-]
+description = "VaniPost - Social media automation platform"
+authors = ["rajput <rajput@example.com>"]
 readme = "README.md"
-requires-python = "^3.11"
-dependencies = [
-    "openai (>=1.102.0,<2.0.0)",
-    "requests (>=2.32.5,<3.0.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)",
-    "flask (>=3.1.2,<4.0.0)"
-]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = { extras = ["standard"], version = "^0.24.0" }
+sqlalchemy = "^2.0.23"
+alembic = "^1.12.1"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.1"
+python-dotenv = "^1.0.0"
+pydantic = "^2.5.0"
+python-multipart = "^0.0.6"
+openai = "^1.102.0"
+requests = "^2.32.5"
+python-jose = { extras = ["cryptography"], version = "^3.3.0" }
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+pydantic-settings = "^2.10.1"
+asyncpg = "^0.30.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+black = "^23.11.0"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -167,3 +167,34 @@ cython_debug/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Project specific
+WARP.md
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Backend
+backend/__pycache__/
+backend/.pytest_cache/
+
+# Docker
+.docker/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Test coverage
+coverage/
+.nyc_output/
